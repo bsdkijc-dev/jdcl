@@ -1,0 +1,26 @@
+registry_version: "1.0.0"
+competitions:
+  - competition_id: "jflm-2027"
+    title: "Justice for the Last Mile Challenge 2027 (JFLM 2027)"
+    platform: "Kaggle Community Competition"
+    cost_tier: "FREE_COMMUNITY_ONLY"
+    status: "DRAFT_LOCAL_ONLY"
+    human_approval_required: true
+    dataset_id: "jflm_2027_synthetic_v1"
+    dataset_path: "data/synthetic/jflm_2027.csv"
+    manifest_path: "data/manifests/jflm_2027.yml"
+    schema_path: "data/schemas/jflm_2027_schema.yml"
+    submission_schema_path: "data/schemas/submission_schema.yml"
+    primary_metric: "mae"
+    secondary_metrics:
+      - "rmse"
+      - "sla_accuracy"
+      - "subgroup_mae_gap"
+    prizes:
+      - "Public leaderboard recognition"
+      - "Digital participation certificate (open-source templates)"
+      - "Research publication & open-source contribution recognition"
+    prohibited_actions:
+      - "Automating judicial decisions"
+      - "Using real litigant or citizen PII"
+      - "Paid promotion or cash prize pools"

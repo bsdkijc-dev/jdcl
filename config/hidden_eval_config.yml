@@ -1,0 +1,19 @@
+# Hidden evaluation configuration (local template only; never contains real data)
+competition_id: "jflm-2027"
+evaluation_mode: "deterministic_holdout_split"
+split_seed: 20270101
+test_fraction: 0.15
+id_column: "record_id"
+target_column: "resolution_days"
+binary_target_column: "service_completed"
+protected_group_columns:
+  - "region_tier"
+  - "vulnerability_group"
+  - "gender_category"
+fairness_thresholds:
+  max_subgroup_mae_gap_days: 10.0
+  min_subgroup_sla_parity_ratio: 0.80
+reproducibility:
+  require_seed_match: true
+  require_hash_verification: true
+  max_score_tolerance: 1e-6

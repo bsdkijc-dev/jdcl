@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jdcl"
+version = "1.0.0"
+description = "Justice Delivery Competition Lab (JDCL) — Zero-cost, reproducible, privacy-preserving competition and research infrastructure for access to justice in Indonesia."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+  {name = "JDCL Research Initiative"}
+]
+keywords = ["access-to-justice", "indonesia", "synthetic-data", "fairness", "kaggle-community", "reproducible-research"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "numpy>=1.24.0",
+  "pandas>=2.0.0",
+  "scipy>=1.10.0",
+  "pyyaml>=6.0",
+  "pydantic>=2.0.0",
+  "matplotlib>=3.7.0",
+  "seaborn>=0.12.0",
+]
+
+[project.optional-dependencies]
+full = [
+  "scikit-learn>=1.3.0",
+  "duckdb>=0.9.0",
+  "streamlit>=1.28.0",
+  "jupyter>=1.0.0",
+  "nbformat>=5.9.0",
+  "nbconvert>=7.0.0",
+]
+dev = [
+  "pytest>=7.4.0",
+  "ruff>=0.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v"

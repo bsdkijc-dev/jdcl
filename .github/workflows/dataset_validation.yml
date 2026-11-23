@@ -1,0 +1,12 @@
+name: Dataset Validation
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: PYTHONPATH=src python3 -m jdcl.quality.validator --data data/synthetic/jflm_2027.csv --manifest data/manifests/jflm_2027.yml --schema data/schemas/jflm_2027_schema.yml

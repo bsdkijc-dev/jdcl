@@ -1,0 +1,12 @@
+name: Documentation Checks
+on: [push, pull_request]
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify required governance and technical documentation exists
+        run: |
+          for f in README.md docs/GOVERNANCE.md docs/DATA_DICTIONARY.md docs/ASSUMPTIONS.md docs/POLICY_RESEARCH_FRAMEWORK.md docs/HUMAN_APPROVAL_CHECKLIST.md; do
+            test -s "$f"
+          done

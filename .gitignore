@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Environment & Credentials (NEVER commit secrets)
+.env
+.env.*
+!.env.example
+kaggle.json
+*.pem
+*.key
+
+# Local runtime & caches
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+artifacts/jpais_store/
+reports/competition/runs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+artifacts/

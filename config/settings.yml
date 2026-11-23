@@ -1,0 +1,29 @@
+project:
+  name: "Justice Delivery Competition Lab"
+  code: "JDCL"
+  version: "1.0.0"
+  mandate: "ZERO-COST-COMMUNITY-v1.0-ZC"
+  primary_initiative: "JFLM-2027"
+
+defaults:
+  random_seed: 20270101
+  synthetic_rows: 10000
+  dataset_version: "1.0.0-synthetic"
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+paths:
+  synthetic_csv: "data/synthetic/jflm_2027.csv"
+  manifest_yml: "data/manifests/jflm_2027.yml"
+  schema_yml: "data/schemas/jflm_2027_schema.yml"
+  submission_schema_yml: "data/schemas/submission_schema.yml"
+  jpais_store_dir: "artifacts/jpais_store"
+  competition_reports_dir: "reports/competition"
+
+governance:
+  allow_external_publish: false
+  allow_kaggle_activation: false
+  allow_real_judicial_records: false
+  require_human_approval_for_release: true
+  data_classification: "P1_SYNTHETIC_PUBLIC_CANDIDATE"

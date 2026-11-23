@@ -1,0 +1,12 @@
+title: "Justice for the Last Mile Challenge 2027 (JFLM 2027)"
+slug: "jflm-2027-synthetic-baseline"
+competition_type: "Kaggle Community Competition"
+cost_tier: "FREE_COMMUNITY_ONLY"
+status: "LOCAL_DRAFT_AWAITING_HUMAN_APPROVAL"
+primary_metric: "MAE (Mean Absolute Error on resolution_days)"
+secondary_metrics:
+  - "RMSE"
+  - "Subgroup MAE Disparity (region_tier, vulnerability_group)"
+prize_structure: "Non-monetary: Public leaderboard, open-source digital certificates, research collaboration"
+dataset: "data/synthetic/jflm_2027.csv (10,000 synthetic rows)"
+api_credentials_available_in_sandbox: false

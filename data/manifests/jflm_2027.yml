@@ -1,0 +1,40 @@
+dataset_id: jflm_2027_synthetic_v1
+dataset_version: 1.0.0-synthetic
+initiative: Justice for the Last Mile Challenge 2027 (JFLM 2027)
+data_classification: P1_SYNTHETIC_PUBLIC_CANDIDATE
+is_synthetic: true
+disclaimer: 100% synthetic dataset generated deterministically for research and competition
+  infrastructure. Contains NO real citizen identities, litigant records, or judicial
+  cases.
+generator:
+  module: jdcl.data.generator
+  random_seed: 20270101
+  row_count: 10000
+  column_count: 19
+provenance:
+  created_utc: '2026-11-23T08:41:34Z'
+  file_path: data/synthetic/jflm_2027.csv
+  sha256: e08685444d57bf3b19f34d0321dfe3d0c01a49dbaf3d55a5f397c9ccb96610d2
+  licence: CC0-1.0 / Apache-2.0 (Synthetic Code & Output)
+  pii_present: false
+  human_publication_approval: false
+columns:
+- record_id
+- province_group
+- region_tier
+- court_jurisdiction
+- service_channel
+- dispute_category
+- vulnerability_group
+- gender_category
+- distance_to_court_km
+- travel_cost_idr_thousands
+- digital_connectivity_index
+- legal_aid_available
+- fee_waiver_prodeo
+- digital_intake_score
+- paralegal_hours
+- case_complexity_index
+- resolution_days
+- service_completed
+- data_origin

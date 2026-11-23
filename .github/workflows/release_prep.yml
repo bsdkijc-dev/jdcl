@@ -1,0 +1,21 @@
+name: Release Preparation (Human-Gated)
+on:
+  workflow_dispatch:
+    inputs:
+      human_approved:
+        description: "Confirm explicit human authorization (type APPROVED)"
+        required: true
+        default: "PENDING"
+jobs:
+  prepare:
+    if: github.event.inputs.human_approved == 'APPROVED'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: PYTHONPATH=src python3 -m unittest discover -s tests -p "test_*.py" -v
+      - name: Package local release bundle (no external publish)
+        run: mkdir -p dist && tar -czf dist/jdcl-v1.0.0-bundle.tar.gz src/ config/ data/ docs/ kaggle/

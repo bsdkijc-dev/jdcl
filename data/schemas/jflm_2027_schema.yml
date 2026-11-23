@@ -1,0 +1,141 @@
+schema_name: "jflm_2027_synthetic_schema"
+schema_version: "1.0.0"
+dataset_version: "1.0.0-synthetic"
+primary_key: "record_id"
+required_row_count: 10000
+prohibited_pii_columns:
+  - "nik"
+  - "full_name"
+  - "nama"
+  - "address"
+  - "alamat"
+  - "phone"
+  - "email"
+  - "case_number"
+  - "nomor_perkara"
+  - "judge_name"
+  - "litigant_name"
+
+columns:
+  record_id:
+    dtype: "string"
+    nullable: false
+    unique: true
+    pattern: "^JFLM2027-[0-9]{6}$"
+  province_group:
+    dtype: "category"
+    nullable: false
+    allowed_values:
+      - "Jawa Barat"
+      - "Jawa Tengah"
+      - "Jawa Timur"
+      - "Nusa Tenggara Barat"
+      - "Nusa Tenggara Timur"
+      - "Sumatera Utara"
+      - "Sulawesi Selatan"
+      - "Kalimantan Tengah"
+      - "Maluku"
+      - "Papua"
+  region_tier:
+    dtype: "category"
+    nullable: false
+    allowed_values:
+      - "Urban"
+      - "Peri-Urban"
+      - "Rural"
+      - "Remote-3T"
+  court_jurisdiction:
+    dtype: "category"
+    nullable: false
+    allowed_values:
+      - "General_District"
+      - "Religious_Family"
+      - "Administrative"
+      - "Industrial_Labor"
+  service_channel:
+    dtype: "category"
+    nullable: false
+    allowed_values:
+      - "Posbakum_InPerson"
+      - "Mobile_Circuit_Court"
+      - "eCourt_Digital"
+      - "Community_Paralegal"
+  dispute_category:
+    dtype: "category"
+    nullable: false
+    allowed_values:
+      - "Civil_Small_Claims"
+      - "Family_Custody_Support"
+      - "Land_Agrarian"
+      - "Labor_Dispute"
+      - "Legal_Aid_Consultation"
+  vulnerability_group:
+    dtype: "category"
+    nullable: false
+    allowed_values:
+      - "Standard"
+      - "Low_Income_Prodeo"
+      - "Indigenous_Remote"
+      - "Person_With_Disability"
+      - "Female_Headed_Household"
+  gender_category:
+    dtype: "category"
+    nullable: false
+    allowed_values:
+      - "Female"
+      - "Male"
+      - "Undisclosed"
+  distance_to_court_km:
+    dtype: "float"
+    nullable: false
+    min: 0.5
+    max: 350.0
+  travel_cost_idr_thousands:
+    dtype: "float"
+    nullable: false
+    min: 5.0
+    max: 2500.0
+  digital_connectivity_index:
+    dtype: "float"
+    nullable: false
+    min: 0.0
+    max: 1.0
+  legal_aid_available:
+    dtype: "int"
+    nullable: false
+    allowed_values: [0, 1]
+  fee_waiver_prodeo:
+    dtype: "int"
+    nullable: false
+    allowed_values: [0, 1]
+  digital_intake_score:
+    dtype: "float"
+    nullable: true
+    max_null_rate: 0.05
+    min: 0.0
+    max: 100.0
+  paralegal_hours:
+    dtype: "float"
+    nullable: true
+    max_null_rate: 0.05
+    min: 0.0
+    max: 80.0
+  case_complexity_index:
+    dtype: "float"
+    nullable: false
+    min: 1.0
+    max: 10.0
+  resolution_days:
+    dtype: "float"
+    nullable: false
+    min: 1.0
+    max: 365.0
+  service_completed:
+    dtype: "int"
+    nullable: false
+    allowed_values: [0, 1]
+  data_origin:
+    dtype: "category"
+    nullable: false
+    allowed_values:
+      - "SYNTHETIC_JFLM_2027_V1"
