@@ -1,0 +1,13 @@
+doc_id,doc_type,year,number,title,subject_cluster,verification_status,dataset_tag
+PERMA_2012_02,PERMA,2012,02,Penyesuaian Batasan Tindak Pidana Ringan dan Jumlah Denda dalam KUHP,Misdemeanor Thresholds (Tipiring),VERIFIED,SYNTHETIC_JDCL_LEGAL_AI_V1
+PERMA_2015_02,PERMA,2015,02,Tata Cara Penyelesaian Gugatan Sederhana,Small Claims Procedure,VERIFIED,SYNTHETIC_JDCL_LEGAL_AI_V1
+PERMA_2016_01,PERMA,2016,01,Prosedur Mediasi di Pengadilan,Court-Annexed Mediation,VERIFIED,SYNTHETIC_JDCL_LEGAL_AI_V1
+PERMA_2019_01,PERMA,2019,01,Administrasi Perkara dan Persidangan di Pengadilan Secara Elektronik,E-Court Administration,VERIFIED,SYNTHETIC_JDCL_LEGAL_AI_V1
+PERMA_2019_04,PERMA,2019,04,Perubahan atas PERMA Nomor 2 Tahun 2015 tentang Gugatan Sederhana,Small Claims Amendment,VERIFIED,SYNTHETIC_JDCL_LEGAL_AI_V1
+PERMA_2020_04,PERMA,2020,04,Administrasi dan Persidangan Perkara Pidana di Pengadilan Secara Elektronik,Electronic Criminal Trials,VERIFIED,SYNTHETIC_JDCL_LEGAL_AI_V1
+PERMA_2022_07,PERMA,2022,07,Perubahan atas PERMA Nomor 1 Tahun 2019 tentang E-Court,E-Court & E-Litigation,VERIFIED,SYNTHETIC_JDCL_LEGAL_AI_V1
+PERMA_2022_08,PERMA,2022,08,Perubahan atas PERMA Nomor 4 Tahun 2020 tentang Persidangan Pidana Elektronik,Electronic Criminal Trials Amendment,VERIFIED,SYNTHETIC_JDCL_LEGAL_AI_V1
+UU_2004_02,UU,2004,02,Penyelesaian Perselisihan Hubungan Industrial,Industrial Relations Court (PHI),VERIFIED,SYNTHETIC_JDCL_LEGAL_AI_V1
+UU_2009_48,UU,2009,48,Kekuasaan Kehakiman,Judicial Power,VERIFIED,SYNTHETIC_JDCL_LEGAL_AI_V1
+UU_2023_01,UU,2023,01,Kitab Undang-Undang Hukum Pidana Nasional,National Criminal Code,VERIFIED,SYNTHETIC_JDCL_LEGAL_AI_V1
+SEMA_2020_01,SEMA,2020,01,Pemberlakuan Rumusan Hasil Rapat Pleno Kamar Mahkamah Agung,Supreme Court Chamber Pleno,VERIFIED,SYNTHETIC_JDCL_LEGAL_AI_V1
