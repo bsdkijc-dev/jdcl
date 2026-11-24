@@ -1,0 +1,30 @@
+name: JDCL Challenges CI
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'challenges/**'
+      - 'tests/**'
+      - 'CONTRIBUTING.md'
+      - 'ETHICS_AND_PRIVACY.md'
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-challenges:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run governance and metadata tests
+        run: python3 -m unittest discover -s tests -p "test_*.py" -v
+      - name: Run Challenge 01 tests
+        run: python3 -m unittest discover -s challenges/01-legal-ai/tests -p "test_*.py" -v
+      - name: Run Challenge 02 tests
+        run: python3 -m unittest discover -s challenges/02-umkm-justice/tests -p "test_*.py" -v
+      - name: Run Challenge 03 tests
+        run: python3 -m unittest discover -s challenges/03-open-metadata/tests -p "test_*.py" -v

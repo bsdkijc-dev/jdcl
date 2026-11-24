@@ -1,0 +1,16 @@
+{
+  "title": "JDCL Open Judicial Metadata Toolkit",
+  "id": "judicialcollege/jdcl-open-judicial-metadata-toolkit",
+  "subtitle": "Court registry schemas and completeness validation benchmarks",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "keywords": [
+    "law",
+    "government",
+    "data cleaning",
+    "indonesia"
+  ]
+}

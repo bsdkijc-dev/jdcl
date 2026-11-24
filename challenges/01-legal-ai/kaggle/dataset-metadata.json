@@ -1,0 +1,16 @@
+{
+  "title": "JDCL Legal AI Citation Benchmark",
+  "id": "judicialcollege/jdcl-legal-ai-citation-benchmark",
+  "subtitle": "Synthetic Indonesian PERMA retrieval and hallucination benchmark",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "keywords": [
+    "law",
+    "nlp",
+    "text mining",
+    "indonesia"
+  ]
+}
