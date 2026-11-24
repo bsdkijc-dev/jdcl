@@ -1,0 +1,37 @@
+{
+  "all_passed": true,
+  "challenges": [
+    {
+      "challenge": "01-legal-ai",
+      "kaggle_id": "judicialcollege/jdcl-legal-ai-citation-benchmark",
+      "csv_files": [
+        "benchmark_queries.csv",
+        "corpus_perma.csv",
+        "ground_truth.csv"
+      ],
+      "total_csv_rows": 2012,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "challenge": "02-umkm-justice",
+      "kaggle_id": "judicialcollege/jdcl-umkm-justice-survival-challenge",
+      "csv_files": [
+        "umkm_justice_pilot.csv"
+      ],
+      "total_csv_rows": 60,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "challenge": "03-open-metadata",
+      "kaggle_id": "judicialcollege/jdcl-open-judicial-metadata-toolkit",
+      "csv_files": [
+        "satker_registry_sample.csv"
+      ],
+      "total_csv_rows": 80,
+      "passed": true,
+      "errors": []
+    }
+  ]
+}
