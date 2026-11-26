@@ -1,4 +1,18 @@
-# Justice Delivery Competition Lab (JDCL) v1.0
+<div align="center">
+
+<img src="assets/logo.svg" alt="Justice Delivery Competition Lab (JDCL) Logo" width="140">
+
+# Justice Delivery Competition Lab (JDCL)
+
+### Open-source, privacy-preserving competition and benchmark lab for the Justice for the Last Mile Challenge 2027.
+
+![Stack](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white) [![CI](https://github.com/bsdkijc-dev/jdcl/actions/workflows/ci_tests.yml/badge.svg)](https://github.com/bsdkijc-dev/jdcl/actions/workflows/ci_tests.yml)
+
+[Documentation](docs/) · [Repository](https://github.com/bsdkijc-dev/jdcl)
+
+</div>
+
+---
 
 **Primary Initiative:** Justice for the Last Mile Challenge 2027 (JFLM 2027)  
 **Architecture Mandate:** Zero-Cost Community Mandate (`v1.0-ZC`)
@@ -40,3 +54,13 @@ make dashboard
 ## Human Approval Gates
 
 Automated pipelines **never** publish datasets, create GitHub releases, activate Kaggle competitions, or deploy public apps without explicit human authorization. See `docs/GOVERNANCE.md` and `docs/HUMAN_APPROVAL_CHECKLIST.md`.
+
+---
+
+<div align="center">
+
+**Justice Delivery Competition Lab (JDCL)**
+
+[github.com/bsdkijc-dev/jdcl](https://github.com/bsdkijc-dev/jdcl)
+
+</div>
